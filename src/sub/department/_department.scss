@@ -202,7 +202,7 @@
                     border-right: none; 
 
                     &::after {
-                        content:""; display: block; background: #ddd; width: 70px; height: 1px; margin: 0px auto; position: absolute; top: 210px; left: 0px; 
+                        content:""; display: block; background: #ddd; width: 60px; height: 1px; margin: 0px auto; position: absolute; top: 0px; left: -8px; margin: 195px auto;
                     }
 
                     &:nth-of-type(2n) {
@@ -223,7 +223,7 @@
                     width:100%; 
                     
                     span {
-                         text-align: center;
+                         text-align: center; margin-bottom: 20px;
                     }
                     p {
                         text-align: center;
