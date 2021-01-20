@@ -1,0 +1,32 @@
+#navi {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+
+    li {
+        margin: 20px 0px;
+
+        a {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background:#ccc;
+            border-radius: 5px;
+            transition: 0.5s;
+            opacity: 0.5;
+
+            &.on {
+                background:#000; opacity: 0.5;
+                height: 60px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1179px){
+    #navi {
+        display: none;
+    }
+}

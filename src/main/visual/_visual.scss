@@ -1,0 +1,17 @@
+#visual {
+    width:100%; height:700px; background:#444; 
+}
+
+/* tablet */
+@media screen and (max-width:$tablet){
+    #visual {
+        height:400px; background:lightblue; 
+    }
+}
+
+/* mobile */
+@media screen and (max-width:$mobile){  
+    #visual {
+        height:200px; background:orange; 
+    }
+}

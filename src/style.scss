@@ -1,0 +1,38 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Open+Sans:wght@300&family=Play&family=Raleway:wght@300&display=swap');
+/* reset */
+* {margin: 0px;padding: 0px;
+    box-sizing: border-box;}
+ul,ol,li {list-style: none;}
+a {text-decoration: none;}
+table {border-collapse: collapse;}
+.hidden {position: absolute; top: -9999px; opacity: 0;}
+fieldset {border: none;}
+
+$tablet : 1179px;
+$mobile : 539px;
+$num : 6;
+
+//main scss 연결
+@import 'main/header/header';
+@import 'main/visual/visual';
+@import 'main/item/item';
+@import 'main/brand/brand';
+@import 'main/gallery/gallery';
+@import 'main/csr/csr';
+@import 'main/notice/notice';
+@import 'main/footer/footer';
+@import 'main/scroll/scroll';
+
+//sub scss 연결
+@import 'sub/data/cookie';
+@import 'sub/header/header';
+@import 'sub/department/department';
+@import 'sub/community/community';
+@import 'sub/member/member';
+@import 'sub/gallery/gallery';
+@import 'sub/faq/faq';
+@import 'sub/youtube/youtube';
+@import 'sub/location/location';
+@import 'sub/footer/footer';
+

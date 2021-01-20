@@ -1,0 +1,166 @@
+<include src="../header/header.html"></include>
+
+<section class="member">
+
+    <div class="visual_sub">
+        <div class="visual_inner">
+            <p>MEMBER</p>
+            <span>Changes Everything in Life</span>
+        </div>
+    </div>
+
+    <div class="inner">
+        <div class="txt">
+            <h1>회원가입</h1>
+            <span>홈페이지 개인회원에 가입하셔서 다양한 서비스를 즐기세요.</span>
+        </div>
+
+        <form action="result.html" method="get">
+
+            <fieldset>
+                <legend class="hidden">회원가입 양식 폼</legend>
+
+                <div class="wrap">
+                    <h2><label for="terms">이용약관 동의</label></h2>
+                    <textarea name="terms" id="terms" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur quisquam, necessitatibus libero rem voluptas exercitationem a maiores explicabo labore, provident mollitia magnam sequi placeat, aliquam in aspernatur voluptatibus! Excepturi harum exercitationem distinctio repellat quo. Soluta deleniti et eveniet dolorem consequuntur cum harum similique ducimus aut blanditiis, veniam beatae obcaecati atque nam id! Assumenda, amet! Recusandae consequatur nemo velit eos nam hic magni inventore iusto obcaecati debitis qui voluptatibus, aspernatur architecto corrupti. Reiciendis cum ducimus laborum quia modi ab sit asperiores! Quod molestias, facilis aspernatur vitae suscipit tempora! Quaerat ab quod ullam a consequuntur. Modi non eius minima quisquam possimus excepturi. Aspernatur similique ullam nobis saepe nisi porro adipisci commodi cupiditate laboriosam veniam deserunt officiis odio iste ab quo ut, dolorum officia quod et, voluptatum deleniti? Iste asperiores pariatur iure minima, autem natus esse. Nulla itaque doloremque suscipit iste architecto velit minima iure et iusto repudiandae, aut molestias ipsa delectus consequatur id perspiciatis maxime dolorem provident veniam tenetur est repellat odit sint. Laudantium, nobis eveniet expedita voluptas a quae aliquam reprehenderit exercitationem porro? Obcaecati ipsum nam quasi hic ad veritatis. Perferendis tenetur voluptas non at magni nostrum, ea eaque eius sed aut officia impedit nisi excepturi iusto facilis tempora eveniet sint optio id ex aperiam! Rerum, laboriosam quasi suscipit architecto aut recusandae officia voluptas. Libero officiis qui velit facere, quod necessitatibus quia quisquam, voluptatibus impedit dolor recusandae, modi pariatur eveniet accusantium in. Libero earum accusantium saepe aliquam nam porro, possimus a veniam molestiae ratione, nihil repudiandae ut numquam eaque iste sequi eveniet quae cupiditate nesciunt asperiores quam harum? A cum voluptatibus at magni aperiam? Aperiam dolor ullam deleniti tenetur dolorem. Pariatur est harum, dicta qui enim quae omnis corporis nesciunt, veniam placeat, odit molestias voluptatibus? In, amet facilis quod odio ut voluptatibus debitis voluptatem quam ipsa, ratione laudantium cumque quas!</textarea>
+
+                    <p class="agreement">
+                        <input type="checkbox" id="agree" name="agree" value="agree"><label for="agree"></label><span>약관에 동의합니다.</span></label>
+                    </p>
+                </div>
+
+                   <div class="txt2">
+                        <h2>입력사항</h2>
+                        <p><span>* </span>로 표시된 사항은 필수 입력 항목입니다.</p>
+                   </div>
+
+
+                <table summary="이름, 아이디, 비밀번호, 주소, 연락처, 이메일, 홍보뉴스레터 수신, 통화 회원가입 신청을 포함한 회원가입 양식 폼">
+                    <caption class="hidden">회원가입 양식 폼</caption>
+
+
+                    <tr>
+                        <th scope="row"><label for="name">이름</label><span> *</span></th>
+                        <td>
+                            <input type="text" id="name" name="name">
+                            <p class="name">이름을 입력해주세요.</p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="userid">아이디</label><span> *</span></th>
+                        <td>
+                            <input type="text" id="userid" name="userid">
+                            <a href="#">중복확인</a>
+                            <p class="userid1">아이디를 입력해주세요.</p>
+                            <p class="userid2">아이디는 8자 이상 입력해주세요.</p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="pwd1">비밀번호</label><span> *</span></th>
+                        <td>
+                            <input type="password" id="pwd1" name="pwd1" >
+                            <p class="pwd1">비밀번호는 8자 이상 영문자, 숫자, 특수문자를 혼용하여 입력해주세요.</p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="pwd2">비밀번호 확인</label><span> *</span></th>
+                        <td>
+                            <input type="password" id="pwd2" name="pwd2">
+                            <p>비밀번호를 다시 입력해주세요.</p>
+                            <p class="pwd2">비밀번호를 동일하게 입력해주세요.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"><label for="address1">주소</label><span> *</span></th>
+                        <td>
+                            <input type="text" id="address1" name="address1">
+                            
+                            <a href="#">우편번호 검색</a>
+                            <input type="text" id="address2" name="address2">
+                            <input type="text" id="address_detail" name="address_detail" placeholder="세부주소를 입력해주세요.">
+                            <p class="address">우편번호를 입력해주세요.</p>
+                            <p>※ 우편번호 검색 작동이 안되시는 분은 마우스 오른쪽 버튼 클릭 후 새로고침 후 다시 이용 부탁드립니다.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="contact">연락처</label><span> *</span></th>
+                        <td>
+                            <select name="contact" id="contact">
+                                <option value="">선택</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="012">012</option>
+                            </select>
+
+                            <input type="text" name="contact2" id="contact2">
+                            <input type="text" name="contact3" id="contact3">
+                            <p class="contact">연락처를 입력해주세요.</p>
+
+                            <p>SMS 수신동의</p>
+                            <input type="radio" name="sms" value="agree" id="agree"> <label for="agree"><span>예</span></label>
+                            <input type="radio" name="sms" value="disagree" id="disagree"> <label for="disagree"><span>아니오</span></label>
+                            <p class="sms">SMS 수신동의 여부를 체크해주세요.</p>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"><label for="email2">이메일</label><span> *</span></th>
+                        <td>
+                            <input type="text" id="email1" name="email1" placeholder="이메일 아이디를 입력해주세요."> @ 
+                            <select name="email2" id="email2">
+                                <option value="">직접입력</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="google.com">google.com</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">수신희망 뉴스레터</th>
+                        <td>
+                            <p>홍보 뉴스레터</p>
+                            <input type="checkbox" id="letter_member" name="newsletter" value="letter_member">
+                            <label for="letter_member"><span>회원 소식지</span></label>
+                            <input type="checkbox" id="letter_event" name="newsletter" value="letter_event"> <label
+                                for="letter_event"><span>기타 사업 및 이벤트 정보</span></label>
+                            <p>※ 원하시는 항목을 체크하시면 수신동의가 됩니다.</p>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <th scope="row">통합 회원가입<span> *</span></th>
+                        <td>
+                            <p>통합회원 가입신청</p>
+                            <input type="radio" id="agree" name="join" value="agree"> <label for="agree"><span>예</span></label>
+                            <input type="radio" id="disagree" name="join" value="disagree"> <label for="disagree"><span>아니오</span></label>
+                            <a href="#">통합회원 가입안내</a>
+                            <p class="join">통합회원 가입신청 여부를 체크해주세요.</p>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">
+                            <input type="reset" value="취소">
+                            <input type="submit" value="확인">
+                        </th>
+                    </tr>
+
+                </table>
+            </fieldset>
+        </form action="/" method="post">
+
+        <p class="copy">COPYRIGHT &copy 2018 SFAC. ALL RIGHT RESERVED.</p>
+
+    </div>
+</section>
+
+<script src="js/sub/member/common.js"></script>
+<script src="js/sub/member/member.js"></script>
+
+<include src="../footer/footer.html"></include>
