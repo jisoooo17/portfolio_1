@@ -6,7 +6,7 @@ $(document).ready(function(){
     var speed = 1000;
     var len = $btns.length;
     var posArr;    
-    var baseLine = -100;//스크롤이 덜 가도 할당값에서 동작하도록 함(baseLine = -150로 할당하면 스크롤이 해당 섹션에 닿기 -150px에서 동작)
+    var baseLine = -200;//스크롤이 덜 가도 할당값에서 동작하도록 함(baseLine = -150로 할당하면 스크롤이 해당 섹션에 닿기 -150px에서 동작)
 
     //처음 로딩시 해당 박스의 세로 위치값을 구해는 함수 호출
     setPos();
