@@ -11,7 +11,7 @@
 	z-index:4; //ie에서의 outerHeight와 크롬에서의 outerHeight가 다르게 인지되기 때문에 헤더에 고정값을 준것. BNG의 오류 방지
 
     >h1 {
-        position: absolute; bottom:15px; left: 2vw;
+        position: absolute; bottom:15px; left: 3vw;
 
         > a {
             font:bold 24px/1 "raleway"; color:#000;
@@ -20,7 +20,7 @@
 
     .menuWeb {
         #gnb {
-            position: absolute; bottom:-10px; right: 2vw;
+            position: absolute; bottom:-10px; right: 3vw;
 
             &::after {
                 content:""; display:block; clear:both;
@@ -39,14 +39,14 @@
 
                 .sub {
                     margin: 0px auto;
+                    margin: 0px auto;
                     position: absolute; 
                     width: 1180px; 
                     height: 255px;
-                    background: #111 ;
-                   // opacity: 0.8;
-                    left: 0px;
-                    transform: translateX(-35%);
-                    top: 63.5px; 
+                    background: #111;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 65px; 
                     display: none;
 
                     h2 {
