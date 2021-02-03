@@ -10,15 +10,13 @@
 
         a {
             display: block;
-            width: 10px;
-            height: 10px;
-            background:#ccc;
-            border-radius: 5px;
+            width: 2px;
+            height: 2px;
+            background:#aaa;
             transition: 0.5s;
-            opacity: 0.5;
 
             &.on {
-                background:#000; opacity: 0.5;
+                background:#000; //opacity: 0.5;
                 height: 60px;
             }
         }
