@@ -3,122 +3,122 @@
 }   
 
 #header {
-    width:100%;height: 160px; border-bottom:1px solid #ddd;  position: relative; margin-top: 40px;z-index: 2; //ie에서의 outerHeight와 크롬에서의 outerHeight가 다르게 인지되기 때문에 헤더에 고정값을 준것. BNG의 오류 방지
+    width: 100%;
+	height: 70px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index:4; //ie에서의 outerHeight와 크롬에서의 outerHeight가 다르게 인지되기 때문에 헤더에 고정값을 준것. BNG의 오류 방지
 
-    .inner {
-        width:1180px; margin:0px auto; position:relative;
+    >h1 {
+        position: absolute; bottom:15px; left: 3vw;
 
-        >h1 {
-            text-align:center; margin-bottom:30px;
-
-            > a {
-                font:bold 36px/1 "raleway"; color:#555;
-            }
-            > span {
-                display:block; margin-top:5px; font:12px/1 "arial"; color:#888; letter-spacing:2px; 
-            }
+        > a {
+            font:bold 24px/1 "raleway"; color:#fff;
         }
+    }
 
-        .menuWeb {
-            #gnb {
-                width:100%;
+    .menuWeb {
+        #gnb {
+            position: absolute; bottom:-10px; right: 5vw;
 
-                &::after {
-                    content:""; display:block; clear:both;
+            &::after {
+                content:""; display:block; clear:both;
+            }
+
+            >li {
+                float:left; margin-left: 40px;
+
+                >a {
+                    display:block;font: 14px/1 'Raleway', sans-serif;  color:#fff; transition: 0.5s; padding: 30px 0px;
+
+                    &:hover, &.on {
+                        color:#5a065a;
+                    }
                 }
 
-                >li {
-                    float:left; width:calc(100% / 7); height:70px;
+                .sub {
+                    margin: 0px auto;
+                    position: absolute; 
+                    width: 1180px; 
+                    height: 255px;
+                    background: #f5f5f5 ;
+                    left: 0px;
+                    transform: translateX(-35%);
+                    top: 63.5px; 
+                    display: none;
 
-                    >a {
-                        display:block; width:100%; height:100%; font:bold 14px/70px 'Play', sans-serif; ; color:#999; text-align:center; transition: 0.5s; padding-bottom: 20px;
+                    h2 {
+                        font:normal 25px/1 'Raleway', sans-serif; position: relative; top: 40px; left: 40px;
 
-                        &:hover, &.on {
-                            color:#5a065a;
+                        &::after {
+                            content: ""; display: block; width: 1px; height: 205px; background: #ddd; position: absolute; top: -15px; left: 200px;
                         }
                     }
 
-                    .sub {
-                        position: absolute; 
-                        width: 1180px; 
-                        height: 255px;
-                        background: #f5f5f5 ;
-                        left: 50%;
-                        margin-left: -590px;
-                        top: 160.2px; 
-                        display: none;
+                    img {
+                        position: absolute; top: 45px; left: 25.5%; width: 300px; height: 160px; object-fit: cover; display: block;
+                    }
 
-                        h2 {
-                            font:normal 25px/1 'Raleway', sans-serif; position: relative; top: 40px; left: 40px;
+                    ul {
+                        li {
+                            margin-bottom: 25px;position: relative;
 
                             &::after {
-                                content: ""; display: block; width: 1px; height: 205px; background: #ddd; position: absolute; top: -15px; left: 200px;
+                                content: ""; display: block; width: 200px; height: 1px; background: #ddd; position: absolute; bottom: 0px; left: 0px; margin-bottom: -7px; 
+                            }
+
+
+                            a {
+                                font:normal 16px/1 'Raleway', sans-serif; color: #000; 
+
+                                i {
+                                    font-size: 12px; margin-left: 135px; color: #ccc;
+                                }
                             }
                         }
 
-                        img {
-                            position: absolute; top: 45px; left: 25.5%; width: 300px; height: 160px; object-fit: cover; display: block;
+                        &:nth-of-type(1) {
+                            position: absolute; top: 40px; left: 56%;
                         }
-
-                        ul {
-                            li {
-                                margin-bottom: 25px;position: relative;
-
-                                &::after {
-                                    content: ""; display: block; width: 200px; height: 1px; background: #ddd; position: absolute; bottom: 0px; left: 0px; margin-bottom: -7px; 
-                                }
-
-
-                                a {
-                                    font:normal 16px/1 'Raleway', sans-serif; color: #000; 
-    
-                                    i {
-                                        font-size: 12px; margin-left: 135px; color: #ccc;
-                                    }
-                                }
-                            }
-
-                            &:nth-of-type(1) {
-                                position: absolute; top: 40px; left: 56%;
-                            }
-                            &:nth-of-type(2) {
-                                position: absolute; top: 40px; left: 78%;
-                            }
+                        &:nth-of-type(2) {
+                            position: absolute; top: 40px; left: 78%;
                         }
                     }
-                    
                 }
+                
             }
         }
+    }
 
-        .btnCall {
-            position:absolute; right:30px; top:50%; transform:translateY(-50%);
-            font-size:26px; color:#444; display:none;
+    .btnCall {
+        position:absolute; right:30px; top:50%; transform:translateY(-50%);
+        font-size:26px; color:#444; display:none;
+    }
+
+    .menuMo {
+        position:fixed; top:0px; left:-270px; background:#333; z-index:10; width:270px; height:100%; box-sizing:border-box; padding:34px 30px; transition:0.5s;
+
+        &.on {
+            left:0px;
         }
 
-        .menuMo {
-            position:fixed; top:0px; left:-270px; background:#333; z-index:10; width:270px; height:100%; box-sizing:border-box; padding:34px 30px; transition:0.5s;
+        h1 {
+            padding-bottom:30px; border-bottom:1px solid #666;
 
-            &.on {
-                left:0px;
-            }
+            a {color:#fff; display:block; text-align:center;}
+            span {color:#aaa; font-size:12px;}
+        }
 
-            h1 {
-                padding-bottom:30px; border-bottom:1px solid #666;
-
-                a {color:#fff; display:block; text-align:center;}
-                span {color:#aaa; font-size:12px;}
-            }
-
-            #gnbMo {
-                li {
-                    a {
-                        display:block; width:100%; padding:20px 0px; border-bottom:1px solid #444; font:bold 14px/1 "arial"; color:#888; text-align:center;
-                    }
+        #gnbMo {
+            li {
+                a {
+                    display:block; width:100%; padding:20px 0px; border-bottom:1px solid #444; font:bold 14px/1 "arial"; color:#888; text-align:center;
                 }
             }
         }
     }
+    
 }
 
 /* tablet */
