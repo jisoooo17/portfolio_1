@@ -27,7 +27,7 @@ $(document).ready(function(){
         var el = $(".panel li").eq(i_on);
         var $header = $("#header");
         var $h1 = $header.find("h1 a");
-        var $gnb = $header.find("#gnb li a");
+        var $gnb = $header.find("#gnb>li>a");
 
         if(i_on == 0) {  
             $h1.css({color:"#000"});
