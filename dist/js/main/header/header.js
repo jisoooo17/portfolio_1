@@ -2,10 +2,12 @@ $(document).ready(function(){
 
     var $skip_a  = $("#skipNavi a");
 
+    /*
     var $header = $("#header");
     var $gnb_li = $("#gnb>li");
     var $sub = $gnb_li.find(".sub");
     var speed = 500;  
+    */
 
     $skip_a.on("focusin",function(){
         $(this).css({top: 0});
@@ -14,6 +16,17 @@ $(document).ready(function(){
         $(this).css({top: -30});
     });
 
+    $("#gnb>li").on("mouseenter focusin",function(){
+        $(this).children("ul").stop().slideDown();
+        $(this).children("a").addClass("on");
+    });
+
+    $("#gnb>li").on("mouseleave focusout",function(){
+        $(this).children("ul").stop().slideUp();
+        $(this).children("a").removeClass("on");
+    });
+
+    /*
     $gnb_li.on("mouseenter focusin",function(){
         openSub(this);
     });
@@ -53,5 +66,5 @@ $(document).ready(function(){
         });
         $(el).children("a").removeClass("on");
     }
-    
+    */
 });
