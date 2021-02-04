@@ -26,12 +26,14 @@ $(document).ready(function(){
     function rect_on(i_on){        
         var el = $(".panel li").eq(i_on);
         var $header = $("#header");
-        var $h1 = $header.find("h1 a");
+        var $h1 = $header.find("h1>a");
         var $gnb = $header.find("#gnb>li>a");
+        var $btnCall = $header.find(".btnCall");
 
         if(i_on == 0) {  
             $h1.css({color:"#000"});
             $gnb.css({color : "#000"});
+            $btnCall.css({color:"#000"});
             el.find(".left").animate({ height:"100%"},speed, function(){
                 el.find(".top").animate({ width:"100%"},speed, function(){
                     el.find(".right").animate({ height:"50%"}, speed, function(){
@@ -43,7 +45,8 @@ $(document).ready(function(){
         
         if(i_on == 1) {
             $h1.css({color:"#fff"});
-            $gnb.css({color : "#000"});
+            $gnb.css({color : "#fff"});
+            $btnCall.css({color:"#fff"});
             el.find(".top").animate({ width: "100%" }, speed, function(){
                 el.find(".right").animate({ height: "100%"}, speed, function(){
                     el.find(".bottom").animate({ width:"50%"}, speed, function(){
@@ -56,6 +59,7 @@ $(document).ready(function(){
         if(i_on == 2) {  
             $h1.css({color:"#fff"});
             $gnb.css({color : "#fff"});
+            $btnCall.css({color:"#fff"});
             el.find(".left").animate({ height:"50%"},speed, function(){
                 el.find(".bottom").animate({ width:"100%"},speed, function(){
                     el.find(".right").animate({ height:"100%"}, speed, function(){

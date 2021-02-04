@@ -14,10 +14,16 @@ $(document).ready(function(){
         console.log("쿠키없음");
         $("#popup").show();
         $(".mask").show();
+        setTimeout(function(){
+            $("#popup").fadeIn(500,function(){
+                // $(this).prev().remove();
+            });
+        },2500);
     }else{
         console.log("쿠키있음")
         $("#popup").hide();
         $(".mask").hide();
+        
     }
 
     //쿠키 팝업 닫기 버튼 클릭시

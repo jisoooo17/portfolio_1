@@ -40,7 +40,7 @@
                 }
                 
                 &::after {
-                    content:"VIEW"; display: flex; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; background: linear-gradient(45deg,#5706577e,#2e0a8188); color: #fff; justify-content: center; align-items: center; opacity: 0; transition: 0.5s;font: 20px/1 'Raleway', sans-serif;
+                    content:"VIEW"; display: flex; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; background: rgba(0, 0, 0, 0.8) ;color: #fff; justify-content: center; align-items: center; opacity: 0; transition: 0.5s;font: 20px/1 'Raleway', sans-serif;
                 }
 
                 &:hover {

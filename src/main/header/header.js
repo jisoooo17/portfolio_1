@@ -29,16 +29,16 @@ $(document).ready(function(){
         var isBgGnb = $(".bgGnb").length;//비지지앤비없으면 false인 0이 찍힘
         console.log(isBgGnb);
 
-        // if(!isBgGnb) { 
-        //     console.log("test");       
-        //     $header.prepend(
-        //         $("<div class='bgGnb'>")
-        //             .css({
-        //                 width:"100%",  height:ht, backgroundColor:bg, 
-        //                 position:"absolute", left:0, top:posY, display:"none"
-        //             })
-        //     )
-        // }
+        if(!isBgGnb) { 
+            console.log("test");       
+            $header.prepend(
+                $("<div class='bgGnb'>")
+                    .css({
+                        width:"100%",  height:ht, backgroundColor:bg, 
+                        position:"absolute", left:0, top:posY, display:"none"
+                    })
+            )
+        }
 
         
         $(el).children(".sub").stop().slideDown(speed);
