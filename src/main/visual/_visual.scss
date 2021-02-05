@@ -328,6 +328,69 @@
     }
 }
 
+@media screen and(max-width : 1179px){
+	#visual{
+		.panel li {
+			&#p1 {	
+				.square {
+					width: 40%;
+						
+					h2 {
+						font: 2.8vw/1.2 "Raleway"; 
+						
+					}
+					p {
+						width:120%;
+						font: 1.4vw/1.8 "Raleway";
+					}
+					a {	
+						width: 140px;
+						bottom: 50px;
+
+					}	
+				}
+			}
+	
+			&#p2 {					
+				.square {
+					height: 60%;
+	
+					h2 {
+						font: 2.8vw/1.2 "Raleway"; 
+						top: 20%;	
+					}
+					p {
+						width:110%;
+						font: 1.4vw/1.8 "Raleway";
+						top: 34%;
+						
+					}
+					a {
+						width: 140px;
+						top: 68%;
+						
+					}
+				}
+			}
+			&#p3 {					
+				.square {
+					h2 {
+						font: 2.7vw/1.2 "Raleway";
+					}
+					p {
+						font: 1.2vw/1.6 "Raleway";
+						margin-bottom: 4.5vh;
+						margin-left: 3vw;
+					}
+					a {
+						width: 140px;
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and(max-width : 539px){
 	#visual {
 		height: 500px;
@@ -409,7 +472,7 @@
 						font: 10px/30px "Raleway";
 						color: #fff;
 						position: absolute;
-						top: 65%;
+						top: 72%;
 						left: -23vw;
 					}
 	
