@@ -26,20 +26,19 @@
 
             >li {
                 float: left; 
-                position: relative;
+                position: relative; //margin-left: 40px;
 
                 >a {
                     display: block;
-                    width: 150px; 
-                    height: 50px;
-                    font: bold 15px/50px "Raleway";
+                    //width: 110px; 
+                    //height: 50px;
+                    font: bold 12px/1 "Raleway";
+                    padding: 20px;
                     color: #000;
                     text-align: center;
 
                     &:hover, &.on {
-                       // background: #111;
-                        // opacity: 0.4;
-                       //border-bottom: 1px solid #000;
+                       
                         color: #fff;
                     }
                 }
@@ -53,18 +52,17 @@
 
                     li a {
                         display: block;
-                        width: 150px;
+                        padding: 20px;
                         height: 50px; 
-                        font: 12px/50px "arial";
+                        font: 12px/1 "arial";
                         color: #bbb;
                         text-align: center;
                         background:#111;
-                        opacity: 0.4;
+                        opacity: 0.9;
                         transition: 0.5s;
 
                         &:hover {
                             background: #111;
-                          
                             color: #fff;
                         }
                     }

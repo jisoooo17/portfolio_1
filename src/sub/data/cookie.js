@@ -12,24 +12,31 @@ $(document).ready(function(){
     //처음 로딩시 쿠키가 있는지 판단해서 쿠키가 없을때만 팝업 보이기
     if(isCookie == -1){
         console.log("쿠키없음");
+        /*
         $("#popup").show();
         $(".mask").show();
+        */
+       $("#popup").hide();
+       $(".mask").hide();
         setTimeout(function(){
-            $("#popup").fadeIn(500,function(){
-                // $(this).prev().remove();
-            });
-        },2500);
+            $("#popup").fadeIn(300);
+            $(".mask").fadeIn(300);
+        },2550);
     }else{
-        console.log("쿠키있음")
+        console.log("쿠키있음");
         $("#popup").hide();
         $(".mask").hide();
-        
     }
 
     //쿠키 팝업 닫기 버튼 클릭시
     $("body").on("click", "#popup .close",function(e){
         e.preventDefault();
         removePop(this);        
+    });
+     //쿠키 삭제 버튼 클릭시
+     $(".del").on("click",function(){
+        setCookie("popup","done",0);
+        alert("쿠키삭제 완료!!");
     });
 
     //쿠키 생성 함수 정의
