@@ -4,7 +4,7 @@
 	position: relative;
 	top: 0px;
 	left: 0px;
-	z-index:4; 
+	z-index:4; //ie에서의 outerHeight와 크롬에서의 outerHeight가 다르게 인지되기 때문에 헤더에 고정값을 준것. BNG의 오류 방지
 
     >h1 {
         position: absolute; bottom:18px; left: 3vw; z-index: 9;
@@ -63,7 +63,6 @@
                 }
             }
         }
-       
     }
 
     .btnCall {
@@ -121,7 +120,7 @@
 
 /* mobile */
 @media screen and (max-width:$mobile){  
-    #headersub {
+    #header_sub {
         >h1 {
 
             > a {

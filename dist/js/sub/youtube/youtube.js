@@ -87,7 +87,7 @@ $(document).ready(function(){
                 $("<aside class='pop'>")
                     .css({
                         width : opt.width, height: opt.height,
-                        backgroundColor:opt.bg, position:"fixed", top:"50%", left:"50%",zIndex:3,
+                        backgroundColor:opt.bg, position:"fixed", top:"50%", left:"50%",zIndex:11,
                         transform:"translate(-50%, -50%)", boxSizing:"border-box", padding:100
                     })
                     .append (

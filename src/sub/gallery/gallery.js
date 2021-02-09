@@ -92,7 +92,7 @@ $(document).ready(function(){
         $("body")
         .append(
             $("<aside class='Pop'>")
-                .css({zIndex:3})
+                .css({zIndex:11})
                 .append(
                     $("<img>").attr("src",imgSrc),
                     $("<span>").text("CLOSE")
