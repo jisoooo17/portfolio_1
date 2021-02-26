@@ -15,8 +15,7 @@ $(document).ready(function(){
 
     $contents.on("click focusin",function(e){
         e.preventDefault();
-        focus($(this));
-        
+        focus($(this));      
     });
 
     function activateBtn(el){

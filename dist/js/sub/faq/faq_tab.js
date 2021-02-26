@@ -14,10 +14,6 @@ $(document).ready(function(){
 
         if(isDone){
             var i = $(this).parent("li").index();
-            // var ht = $boxs.eq(i).outerHeight(true);
-            // var dd_ht = $boxs.find("dd").outerHeight();
-            // var total = ht + dd_ht;
-
             activation(i)
             isDone = false;
         }     
@@ -32,9 +28,5 @@ $(document).ready(function(){
         $boxs.eq(index).fadeIn(speed,function(){
             isDone = true;
         });
-
-        // $tab.animate({height : height},speed,function(){
-        //     isDone = true;
-        // });
     }
 });

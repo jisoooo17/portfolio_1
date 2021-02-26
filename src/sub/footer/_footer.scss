@@ -20,7 +20,8 @@
                     float:left; margin-left:20px; 
 
                     a {
-                        display: block;width: 45px; height: 45px; border-radius: 50%;  font:bold 18px/48px "arial"; color:#555; text-align: center; background: rgba(221, 221, 221, 0.4); //border: 1px solid #ccc;
+                        display: block;width: 45px; height: 45px; border-radius: 50%;  font:bold 18px/48px "arial"; color:#555; text-align: center; background: rgba(221, 221, 221, 0.4); 
+
                         i {
                             font-size: 20px; line-height: 20px;
                         }
@@ -62,8 +63,8 @@
             width:100%; 
         }
     }
-    
 }
+
 /* mobile */
 @media screen and (max-width:$mobile){  
     #footer_sub {
@@ -84,7 +85,6 @@
                         margin-left:0px; float:none; display:inline-block; padding:0px 20px;
                     }
                 }
-                
             }
     
             .lower {    

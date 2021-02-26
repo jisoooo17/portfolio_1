@@ -56,12 +56,8 @@ $(document).ready(function(){
         if(len == undefined) len = 5;
         
         var txt = $("[name='"+name+"']").val();
-        // var msg1 = $("[name='"+name+"']").siblings(".userid1").text();
-        // var msg2 = $("[name='"+name+"']").siblings(".userid2").text();
-        
-        
+      
         if(txt==""){
-           // alert(msg1);
             $("[name='"+name+"']").siblings(".userid1").addClass("error");
             $("[name='"+name+"']").addClass("error");
             return false;
@@ -70,18 +66,14 @@ $(document).ready(function(){
             $("[name='"+name+"']").siblings(".userid1").removeClass("error");
 
             if(txt.length < len){
-                //alert(msg2);
                 $("[name='"+name+"']").siblings(".userid2").addClass("error");
                 $("[name='"+name+"']").addClass("error");
                 return false;
             }else{
-                
                 $("[name='"+name+"']").siblings(".userid2").removeClass("error");
                 $("[name='"+name+"']").removeClass("error");
-                return true;
-                
-            }
-                
+                return true;   
+            }         
         }
     }
 
@@ -95,11 +87,8 @@ $(document).ready(function(){
         var spc = /[~!@#$%^&*()_+|{}<>?;:=-\]\[]/;   
 
         var i=0;  
-        //var msg = $("input[name='"+name1+"']").siblings("p").text();
 
         if(pwd1 === pwd2){
-            //  (pwd1.length >= len),
-            // (spc.test(pwd1)), (num.test(pwd1)), (eng.test(pwd1)) ? i++ : 
             (pwd1.length >= len ) ? i++ :
             $("[name='"+name1+"']").siblings(".pwd1").addClass("error");
             (spc.test(pwd1)) ? i++ : 
@@ -109,7 +98,6 @@ $(document).ready(function(){
             (eng.test(pwd1)) ? i++ : 
             $("[name='"+name1+"']").siblings(".pwd1").addClass("error");
               
-
             if(i!=4){
                 $("[name='"+name2+"']").siblings(".pwd2").removeClass("error");
                 $("input[name='"+name1+"']").addClass("error");
@@ -132,10 +120,8 @@ $(document).ready(function(){
 
     function isTxt2(name1,name2){
         var txt = $("input[name='"+name1+"']").val();
-        //var msg = $("input[name='"+name1+"']").attr("placeholder");
 
         if(txt==""){
-           // alert(msg);
             $("[name='"+name1+"']").siblings(".address").addClass("error");
             $("[name='"+name1+"']").addClass("error");
             $("[name='"+name2+"']").addClass("error");
@@ -150,10 +136,8 @@ $(document).ready(function(){
 
    function isSelect(name){
     var sel = $("select[name='"+name+"']").children("option:selected").val();
-    //var msg = $("select[name='"+name+"']").parent().find(".contact").text();
 
         if(sel==""){
-            //alert(msg);
             $("select[name='"+name+"']").addClass("error");   
             $("select[name='"+name+"']").parent().find(".contact").addClass("error");
             return false;

@@ -53,10 +53,7 @@ $(document).ready(function(){
         $btns.eq(index).addClass("on");
         $wrap.find("dl").eq(index).fadeIn(speed,function(){
             isDone = true;
-        })
-
-        
- 
+        });
     }
 
     function slide(el){

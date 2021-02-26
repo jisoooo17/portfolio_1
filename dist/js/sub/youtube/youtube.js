@@ -19,8 +19,6 @@ $(document).ready(function(){
             bg : "rgba(0,0,0,0.9)",
             vidId : vidId
         });
-        // $("body").css({overflow:"hidden"})
-        // $("header").css({"z-index":0})
     });
 
     $("body").on("click",".pop .close",function(e){
