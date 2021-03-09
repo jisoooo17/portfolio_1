@@ -89,7 +89,7 @@ $(document).ready(function(){
                     })
                     .append (
                         $("<a href='#' class='close'>")
-                            .text("close")
+                            .text("CLOSE")
                             .css({
                                 position: "absolute", top:20, right:20, color:"#fff"
                             }),
