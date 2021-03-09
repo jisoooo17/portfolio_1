@@ -11,7 +11,7 @@
 	z-index:4; 
 
     >h1 {
-        position: absolute; bottom:18px; left: 3vw; z-index: 9;
+        position: absolute; bottom:10px; left: 3vw; z-index: 9;
 
         > a {
             font:bold 24px/1 "raleway"; color:#000;
@@ -22,7 +22,7 @@
         #gnb {
             position: absolute;
             right: 2vw;
-            bottom: 10px;
+            bottom: 0px;
 
             >li {
                 float: left; 
