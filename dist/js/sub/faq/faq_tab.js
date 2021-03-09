@@ -19,7 +19,7 @@ $(document).ready(function(){
         }     
     });
 
-    //fubction declaration
+    //function declaration
     function activation(index){
         $btns.removeClass("on");
         $boxs.fadeOut(speed);

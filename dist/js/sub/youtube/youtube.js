@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
     callData({
         target : "#vidGallery .inner",
         count : 8,
