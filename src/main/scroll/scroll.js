@@ -60,7 +60,5 @@ $(document).ready(function(){
         var targetPos = $(target).offset().top; 
         $("html, body").stop().animate({ scrollTop : targetPos },speed);
     }
-
-
  
 });

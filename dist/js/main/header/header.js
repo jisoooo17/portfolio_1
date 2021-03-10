@@ -18,4 +18,5 @@ $(document).ready(function(){
         $(this).children("ul").stop().slideUp();
         $(this).children("a").removeClass("on");
     });
+    
 });
