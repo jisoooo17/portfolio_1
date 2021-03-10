@@ -91,7 +91,7 @@ $(document).ready(function(){
                         $("<a href='#' class='close'>")
                             .text("CLOSE")
                             .css({
-                                position: "absolute", top:20, right:20, color:"#fff"
+                                position: "absolute", top:20, right:20, color:"#fff",fontSize:14
                             }),
                         $("<img src='img/loading.gif'>")
                             .css({
