@@ -12,10 +12,7 @@ $(document).ready(function(){
     //처음 로딩시 쿠키가 있는지 판단해서 쿠키가 없을때만 팝업 보이기
     if(isCookie == -1){
         console.log("쿠키없음");
-        /*
-        $("#popup").show();
-        $(".mask").show();
-        */
+      
        $("#popup").hide();
        $(".mask").hide();
         setTimeout(function(){
